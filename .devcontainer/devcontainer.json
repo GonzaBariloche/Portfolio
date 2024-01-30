@@ -1,0 +1,8 @@
+// .devcontainer/devcontainer.json
+
+{
+    "name": "Angular Codespace",
+    "extensions": [],
+    "postCreateCommand": "npm install -g @angular/cli",
+    "settings": {}
+  }
