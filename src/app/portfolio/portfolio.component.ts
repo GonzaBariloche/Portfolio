@@ -14,6 +14,10 @@ export class PortfolioComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
+  verProyecto(proyecto: string): void {
+    this.router.navigate([`/proyecto/${proyecto}`]);
+  }
+  
   ngOnInit() {
     this.authService.isLoggedIn().subscribe((isLoggedIn) => {
       if (!isLoggedIn) {

@@ -22,6 +22,8 @@
     padding: 1rem;
 }
     */
+
+
 .container h2{
     color: #0A66C3;
     font-size: 4.6rem;
@@ -150,5 +152,38 @@ line-height: 1.5;
     color: #ffffff; /* Cambiar a tu color preferido */
   }
   
+  /* En tu archivo de estilos CSS */
+.btn-proyecto {
+    width: 300px; /* Ajusta el tamaño según tus necesidades */
+    height: 300px;
+    margin: 10px; /* Ajusta el margen según tus necesidades */
+    /* Otros estilos según tus preferencias */
+}
 
+.cuadricula-botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 20px; /* Espacio entre botones */
+    justify-content: center; /* Centra la cuadrícula horizontalmente */
+    align-items: center; /* Centra la cuadrícula verticalmente */
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+  }
   
+  .contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .cuadricula-botones {
+    grid-column: span 2; /* Ocupa dos columnas */
+  }
+  
+.experiencias-laborales, .educacion, .cuadricula-botones {
+    flex: 1;
+    margin: 20px; /* Ajusta el margen según tus necesidades */
+  }
