@@ -4,13 +4,12 @@ import { LoginComponent } from './componentes/login/login.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
-  {path: 'portfolio',component:PortfolioComponent},
-  {path: 'iniciar-sesion',component:LoginComponent},
-  {path:'',redirectTo:'iniciar-sesion',pathMatch:'full'}  
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: '', redirectTo: 'portfolio', pathMatch: 'full' }, // Redirige directamente a 'portfolio'
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -27,6 +27,10 @@ import { CommonModule } from '@angular/common';
 import { EducacionComponent } from './educacion/educacion.component';
 import { FormsModule } from '@angular/forms';
 import { BannerComponent } from './banner/banner.component';
+import { Proyecto1Component } from './proyecto1/proyecto1.component';
+import { Proyecto2Component } from './proyecto2/proyecto2.component';
+import { Proyecto3Component } from './proyecto3/proyecto3.component';
+import { Proyecto4Component } from './proyecto4/proyecto4.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +41,10 @@ import { BannerComponent } from './banner/banner.component';
     PortfolioComponent,
     EducacionComponent,
     BannerComponent,
+    Proyecto1Component,
+    Proyecto2Component,
+    Proyecto3Component,
+    Proyecto4Component,
   ],
   imports: [
     BrowserModule,
