@@ -1,1 +1,11 @@
-<p>proyecto1 works!</p>
+<!-- proyecto1.component.html -->
+
+<div *ngFor="let producto of productos">
+    {{ producto }}
+  </div>
+  
+ 
+  <button (click)="calcularBolsas()">Calcular Bolsas</button>
+  
+  <p>Total de Bolsas de Tela: {{ bolsasDeTela }}</p>
+  
