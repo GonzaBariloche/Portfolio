@@ -1,11 +1,19 @@
 <!-- proyecto1.component.html -->
 
-<div *ngFor="let producto of productos">
-    {{ producto }}
+<div class="cuadricula-productos">
+  <div *ngFor="let producto of listaProductos" class="producto">
+    <img [src]="producto.imagen" alt="{{ producto.nombre }}" width="50" height="50">
+    <div class="nombre-producto">{{ producto.nombre }}</div>
+    <div class="contadores">
+      <button (click)="restarCantidad(producto)" class="btn-decremento">-</button>
+      <span>{{ cantidades[producto.nombre] || 0 }}</span>
+      <button (click)="sumarCantidad(producto)" class="btn-incremento">+</button>
+    </div>
+    <input type="number" [(ngModel)]="cantidades[producto.nombre]" />
   </div>
-  
- 
-  <button (click)="calcularBolsas()">Calcular Bolsas</button>
-  
-  <p>Total de Bolsas de Tela: {{ bolsasDeTela }}</p>
+</div>
+
+<p>Total de Bolsas de Tela: {{ bolsasDeTela }}</p>
+
+
   

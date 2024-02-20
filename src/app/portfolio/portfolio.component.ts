@@ -14,8 +14,8 @@ export class PortfolioComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
-  verProyecto(proyecto: string): void {
-    this.router.navigate([`/proyecto/${proyecto}`]);
+  verProyecto(proyectoId: string): void {
+    this.router.navigate([`/proyecto${proyectoId}`]); // Cambia '/proyecto/${proyectoId}' a `/proyecto${proyectoId}`
   }
   
   ngOnInit() {

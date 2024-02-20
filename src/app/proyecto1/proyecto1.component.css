@@ -1,0 +1,31 @@
+.btn-incremento, .btn-decremento {
+    width: 40px; /* Ajusta el tamaño según tus necesidades */
+    height: 40px; /* Ajusta el tamaño según tus necesidades */
+  }
+
+  .producto-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+  }
+
+  .cuadricula-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contadores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
